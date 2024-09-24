@@ -16,17 +16,20 @@ donateBtn.addEventListener('click', function(){
    
    const afterBalance = beforeBlance - donateAmountElement;
    document.getElementById('before-balance').innerText = afterBalance;
-   const historySection =document.getElementById('history-section');
-   historySection.innerHTML = `
-   <p class ="text-xl font-white font-semi-bold">${totalBlance} Taka domate for famine-2024 at Feni,Bangladesh</p>
-   <p>${new Date().toLocaleDateString()}</p>
-   
-   
-   
-   
-   `
+   const p =document.createElement('p');
+   p.innerHTML = `${totalBlance} Taka domate for famine-2024 at Feni,Bangladesh`
+   document.getElementById()
 
-
+   const historyItem = document.createElement('div');
+   historyItem.className = "bg-white w-[500px] h-[200px] border-indigo-300 rounded-md";
+   historyItem.innerHTML = `
+       <p class="text-xl text-black font-semibold p-4 bg-white">${totalBlance} Taka donated for famine-2024 at Feni, Bangladesh</p>
+       <p class="text-xl text-black font-semibold p-4 bg-white">${new Date().toLocaleDateString()}</p>
+   `;
+   
+   const historySection = document.getElementById('history-section'); 
+       historySection.insertBefore(historyItem, historySection.firstChild);
+   
    
 });
 
@@ -43,9 +46,8 @@ historyBtn.addEventListener('click', function(){
 
 
 });
-document.getElementById('blog-page')
-.addEventListener('click',function(){
-    window.location.href = "/B10A05/blob/main/blog.html"
-})
+document.getElementById('blog-page').addEventListener('click', function() {
+    window.location.href = "https://harunctg84.github.io/B10A05/blog.html"; 
+});
 
 
