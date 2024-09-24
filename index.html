@@ -21,7 +21,9 @@
                 </div>
                 <div class="flex items-center gap-2">
                     <img src="assets/coin.png" alt="">
-                    <p class="text-black text-xl"> 400 BDT</p>
+                    <p class="text-black text-xl  font-bold" id ="before-balance"> 5000 </p>
+                    <P class="text-black text-xl font-bold">BDT</P>
+
                 </div>
             </div>
         </nav>
@@ -29,17 +31,17 @@
          <!-- ..buttun -->
          <div>
             <div class="flex justify-center py-9 gap-8">
-                <div class="flex items-center bg-lime-300 px-5 py-2 rounded font-semibold border-2">
+                <div  id ="donation-btn"class="flex items-center bg-lime-300 px-5 py-2 rounded font-semibold border-2">
                     <button>Donation</button>
                 </div>
-                <div class="flex items-center px-5 py-2 rounded font-semibold border-2 border-orange-1`00">
+                <div id="history-btn"class="flex items-center px-5 py-2 rounded font-semibold border-2 border-orange-100">
                     <button>History</button>
                 </div>
             </div>
         </div>
 
     </header>
-<main>
+<main class="" id="card">
 
     <section class="w-11/12 mx-auto flex  justify-center gap-10 bg-slate-100 p-4 rounded-lg mb-5">
         <div class="w-5/12">
@@ -48,7 +50,8 @@
         <div class="w-6/12">
             <div class=" flex  items-center w-1/12  gap-2 ">
                 <img src="assets/coin.png" alt="">
-                <p class="text-black font-bold">400BDT</p>
+                <p class="text-black font-bold" id ="balance">00</p>
+                <p class="text-black font-bold">BDT</p>
                 
             </div>
 
@@ -57,8 +60,9 @@
                 Noakhali, Bangladesh, has been hit hard by devastating floods, leaving thousands of families homeless and in urgent need of help. Roads, homes, and farmlands have been submerged, cutting off access to essential services. Immediate relief is necessary to provide food, clean water, and shelter to the affected communities. Your donation can bring hope and provide life-saving resources to those in need. Every contribution, big or small, makes a difference. Join us in this effort to support the flood victims and help rebuild lives. Together, we can make an impact.
 
             </p>
-            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
-            <button class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+            <input  id ="donate-amount" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
+            <p class="text-red-600 font-bold hidden" id ="error-ms">Invalid Donate Amount !</p>
+            <button id = "donate-btn"class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
 
         </div>
     </section>
@@ -103,9 +107,16 @@
 
         </div>
     </section>
+    <!-- History section -->
+     
 </main>
+ <section >
+    <div id ="history-section" class="w-11/12 mx-auto h-80 rounded-lg border-red-500 bg-slate-400">
+
+    </div>
+ </section>
     
     
-    <script src="js/dom.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 </html>
