@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet"    type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="sticky top-0 z-20">
+        <nav class=" bg-orange-50 h-24">
+            <div class="flex justify-around  items-center  pt-5">
+                <div id="blog-page" class="flex items-center bg-lime-300 px-5 py-2 rounded font-semibold">
+                    <button>Blog</button>
+                </div>
+                <div class="flex  justify-center items-center gap-2">
+                    <img src="assets/logo.png" alt="">
+                    <p class="text-black text-xl mt-4 font-bold">Donate Bangladesh</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <p class="text-black text-xl  font-bold" id ="before-balance"> 5000 </p>
+                    <P class="text-black text-xl font-bold">BDT</P>
+
+                </div>
+            </div>
+        </nav>
+
+         <!-- ..buttun -->
+         <div>
+            <div class="flex justify-center py-9 gap-8">
+                <div  id ="donation-btn"class="flex items-center bg-lime-300 px-5 py-2 rounded font-semibold border-2">
+                    <button>Donation</button>
+                </div>
+                <div id="history-btn"class="flex items-center px-5 py-2 rounded font-semibold border-2 border-orange-100">
+                    <button>History</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+<main class="" id="card">
+
+    <section class="w-11/12 mx-auto flex  justify-center gap-10 bg-slate-100 p-4 rounded-lg mb-5">
+        <div class="w-5/12">
+            <img src="assets/noakhali.png" alt="">
+        </div>
+        <div class="w-6/12">
+            <div class=" flex  items-center w-1/12  gap-2 ">
+                <img src="assets/coin.png" alt="">
+                <p class="text-black font-bold" id ="balance">00</p>
+                <p class="text-black font-bold">BDT</p>
+                
+            </div>
+
+            <h1 class="text-black font-bold mt-[10px] mb-2">Donate for flood at Noakhali, Bangladesh</h1>
+            <p>
+                Noakhali, Bangladesh, has been hit hard by devastating floods, leaving thousands of families homeless and in urgent need of help. Roads, homes, and farmlands have been submerged, cutting off access to essential services. Immediate relief is necessary to provide food, clean water, and shelter to the affected communities. Your donation can bring hope and provide life-saving resources to those in need. Every contribution, big or small, makes a difference. Join us in this effort to support the flood victims and help rebuild lives. Together, we can make an impact.
+
+            </p>
+            <input  id ="donate-amount" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
+            <p class="text-red-600 font-bold hidden" id ="error-ms">Invalid Donate Amount !</p>
+            <button id = "donate-btn"class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto flex  justify-center gap-10 bg-slate-100 p-4 rounded-lg mb-5">
+        <div class="w-5/12">
+            <img src="assets/feni.png" alt="">
+        </div>
+        <div class="w-6/12">
+            <div class=" flex  items-center w-1/12  gap-2 ">
+                <img src="assets/coin.png" alt="">
+                <p class="text-black font-bold">400BDT</p>
+                
+            </div>
+
+            <h1 class="text-black font-bold mt-[10px] mb-2">Donate for flood at feni, Bangladesh</h1>
+            <p>
+                The recent floods in Feni, Bangladesh, have caused widespread devastation, displacing families and destroying homes, crops, and infrastructure. Thousands are struggling without access to clean water, food, or shelter. Immediate assistance is crucial to meet the basic needs of those affected. Your donation can help provide emergency relief, including food supplies, medical aid, and temporary shelters for displaced families. The people of Feni urgently need your support to recover from this disaster. Every contribution counts in restoring hope and rebuilding lives. Stand with us to make a difference today.
+            </p>
+            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
+            <button class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto flex  justify-center gap-10 bg-slate-100 p-4 rounded-lg mb-10">
+        <div class="w-5/12">
+            <img src="assets/quota-protest.png" alt="">
+        </div>
+        <div class="w-6/12">
+            <div class=" flex  items-center w-1/12  gap-2 ">
+                <img src="assets/coin.png" alt="">
+                <p class="text-black font-bold">400BDT</p>
+                
+            </div>
+
+            <h1 class="text-black font-bold mt-[10px] mb-2">Aid for Injured for quota movement, Bangladesh</h1>
+            <p>
+                During the Quota Reform Movement in Bangladesh, many students and activists were injured while advocating for fair employment opportunities. These brave individuals risked their safety to demand justice and equal rights. As they recover from their injuries, they face mounting medical expenses, and many are struggling to afford proper care. Your support is crucial in providing them with necessary medical aid, rehabilitation, and financial assistance during this difficult time. By donating, you can help them heal and stand strong once again. Let’s stand together to support the injured and ensure their voices are not forgotten. Every contribution makes a difference.
+
+            </p>
+            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full max-w-xs mt-[20px]" /><br>
+            <button class="btn bg-lime-400 w-11/12 mx-auto mt-[30px]">Donate now</button>
+
+        </div>
+    </section>
+    <!-- History section -->
+     
+</main>
+ 
+   <div>
+    <h1 class ="text-2xl font-bold text-black ml-[300px] mt-8 w-11/12 mx-auto ">History Section</h1>
+    <div id ="history-section" class="w-11/12 mx-auto h-80 rounded-lg border-red-500 bg-slate-400">
+        
+
+    </div>
+   </div>
+ 
+    
+    
+    <script src="js/donate.js"></script>
+</body>
+</html>
