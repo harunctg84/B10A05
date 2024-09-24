@@ -47,7 +47,7 @@ historyBtn.addEventListener('click', function(){
 
 });
 document.getElementById('blog-page').addEventListener('click', function() {
-    window.location.href = "https://harunctg84.github.io/B10A05/index.html"; 
+    window.location.href = "https://harunctg84.github.io/B10A05/home.html"; 
 });
 
 
