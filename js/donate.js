@@ -45,7 +45,7 @@ historyBtn.addEventListener('click', function(){
 });
 document.getElementById('blog-page')
 .addEventListener('click',function(){
-    window.location.href = "B10A05/blog.html"
+    window.location.href = "/B10A05/blob/main/blog.html"
 })
 
 
